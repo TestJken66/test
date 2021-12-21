@@ -36,13 +36,15 @@ jobs:
         run: |
           # prepare mdout
           wget https://raw.githubusercontent.com/FisherWY/Shell/master/mdout/install_mdout.sh -O - | bash /dev/stdin
-
-      - name: Let't rr
-        shell: bash
-        continue-on-error: true
-        run: |
           mdout tes.md
           ls
+
+      # - name: Let't rr
+      #   shell: bash
+      #   continue-on-error: true
+      #   run: |
+      #     mdout tes.md
+      #     ls
 
       - name: ypload
         shell: bash
