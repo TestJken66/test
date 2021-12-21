@@ -26,6 +26,7 @@ jobs:
 
       - name: Let't test
         run: |
+          sudo apt install -y chromium-browser
           # prepare mdout
           wget https://raw.githubusercontent.com/FisherWY/Shell/master/mdout/install_mdout.sh -O - | bash /dev/stdin
           mdout tes.md
