@@ -31,9 +31,16 @@ jobs:
           sudo apt install  chromium-browser
 
       - name: Let't test
+        shell: bash
+        continue-on-error: true
         run: |
           # prepare mdout
           wget https://raw.githubusercontent.com/FisherWY/Shell/master/mdout/install_mdout.sh -O - | bash /dev/stdin
+
+      - name: Let't rr
+        shell: bash
+        continue-on-error: true
+        run: |
           mdout tes.md
           ls
 
