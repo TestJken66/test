@@ -24,9 +24,14 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+      - name: xx
+        shell: bash
+        continue-on-error: true
+        run: |
+          sudo apt install  chromium-browser
+
       - name: Let't test
         run: |
-          sudo apt install -y chromium-browser
           # prepare mdout
           wget https://raw.githubusercontent.com/FisherWY/Shell/master/mdout/install_mdout.sh -O - | bash /dev/stdin
           mdout tes.md
