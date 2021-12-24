@@ -23,6 +23,8 @@ jobs:
 
       - name: rr
         run: |
+            chmod -R 777 *
+            npm install
             echo "will =============build============"
             npm run build
             echo "will =============--clean============"
