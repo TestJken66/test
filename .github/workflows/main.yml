@@ -25,6 +25,7 @@ jobs:
         run: |
             chmod -R 777 *
             npm install
+            npm install -g typescript
             echo "will =============build============"
             npm run build
             echo "will =============--clean============"
